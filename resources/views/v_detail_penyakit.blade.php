@@ -15,23 +15,23 @@
 							<table class="table">
 								<tr>
 									<th>Nama Penyakit</th>
-									<td>{{$namap}}</td>
+									<td>{{$nama}}</td>
 								</tr>
 								<tr>
-									<th>Gejala yang dipilih</th>
+									<th>Gejala normal</th>
 									<td>
-											@foreach($gejala as $key=>$value)
-											<li>{{ $value->nama_gejala}}</li>
+											@foreach($gejala2 as $key=>$value)
+											<li>{{ $value->nama_gejala }}</li>
 											@endforeach
 									</td>
 								</tr>
 								<tr>
 									<th>Penjelasan</th>
-									<td>{{$penjelasanp}}</td>
+									<td>{{$penjelasan}}</td>
 								</tr>
 								<tr>
 									<th>Penanganan</th>
-									<td>{{$penangananp}}</td>
+									<td>{{$penanganan}}</td>
 								</tr>
 							</table>
 							<a href="{{ route('kembali') }}"><button>Kembali</button></a>
@@ -47,3 +47,22 @@
 	</section>
 
 	@endsection
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>corn</title>
+</head>
+<body>
+Nama Penyakit:<br>
+{{$nama}}<br>
+Penjelasan Penyakit:<br>
+{{$penjelasan}}<br>
+Penanganan Penyakit:<br>
+{{$penanganan}}<br>
+Gejala Penyakit:<br>
+@foreach($gejala2 as $key=>$value)
+{{$value->nama_gejala}}<br>
+@endforeach
+</body>
+</html> -->

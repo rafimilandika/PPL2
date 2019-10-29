@@ -35,7 +35,7 @@ route::resource('diagnosa', 'c_diagnosa');
 route::get('/diagnosacoba', 'c_diagnosa@cekdiagnosa')->name('diagnosacoba');
 route::get('kembali', 'c_diagnosa@updatestatus')->name('kembali');
 
-
+route::resource('informasi', 'c_informasi');
 // route::resource('pertanyaan','c_pertanyaan_diagnosa');
 
 // route::get('tanya/{id}', 'c_pertanyaan_diagnosa@show');

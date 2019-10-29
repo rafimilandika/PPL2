@@ -47,7 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="{{ route('diagnosa.index') }}" class="nav-link">Diagnosa</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Informasi Penyakit</a>
+            <a href="{{route('informasi.index')}}" class="nav-link">Informasi Penyakit</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Forum</a>
